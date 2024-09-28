@@ -11,15 +11,22 @@ Here we will focus on how to install Time Doctor tool on Linux, and the common i
 2. go to downloads directory and move the downloaded script file `td2-ubuntu-interactive-v3.14.54.sh` to home.
     
 
-`cp td2-ubuntu-interactive-v3.14.54.sh ~`
+```bash
+cp td2-ubuntu-interactive-v3.14.54.sh ~
+```
 
 3\. change file permission.
 
-`chmod +x td2-ubuntu-interactive-v3.14.54.sh`
+```bash
+chmod +x td2-ubuntu-interactive-v3.14.54.sh
+```
+
 
 4\. run the script using this command.
 
-`bash td2-ubuntu-interactive-v3.14.54.sh`
+```bash
+bash td2-ubuntu-interactive-v3.14.54.sh
+```
 
 ### Install the extension (chrome)
 
@@ -64,11 +71,15 @@ To fix it you will disable wayland to switch back to org by following these comm
 1. open config file `/etc/gdm3/custom.conf`
     
 
-`nanon /etc/gdm3/custom.conf`
+```bash
+nano /etc/gdm3/custom.conf
+```
 
 2\. uncomment this option by removing the `#` from the beginning of the line.
 
-`#WaylandEnable=false`
+```bash
+#WaylandEnable=false
+```
 
 3\. save the file and reboot the OS.
 
@@ -98,7 +109,9 @@ To fix it you will disable wayland to switch back to org by following these comm
 - to fix the issue, export this env var `QTWEBENGINE_DISABLE_SANDBOX`with value `1`
     
 
-`export QTWEBENGINE_DISABLE_SANDBOX=1`
+```bash
+export QTWEBENGINE_DISABLE_SANDBOX=1
+```
 
 - Prefer to append that export env var into `.bashrc` in your home directory to work on each terminal startup.
     
@@ -133,8 +146,7 @@ sudo apt install libxcb-xinput0
 ``` bash
 mkdir -p libffi7
 mv libffi_3.3-4.dsc libffi_3.3.orig.tar.gz libffi_3.3-4.debian.tar.xz libffi7/
-
- ```
+```
 
 2\. change your directory to Downloads `cd ~/Downloads`
 
@@ -149,14 +161,20 @@ sudo apt install debhelper dh-autoreconf libltdl-dev dejagnu texinfo
 
 4\. unpack the source package
 
-`dpkg-source -x libffi_3.3-4.dsc`
+```bash
+dpkg-source -x libffi_3.3-4.dsc
+```
 
 5\. build the source package
 
-`dpkg-buildpackage -us -uc`
+```bash
+dpkg-buildpackage -us -uc
+```
 
 6\. install the built package from the parent directory
 
-`sudo dpkg -i ../libffi7_3.3-4_amd64.deb`
+```bash
+sudo dpkg -i ../libffi7_3.3-4_amd64.deb
+```
 
 7\. reinstall the time doctor script, the app should run just fine.
