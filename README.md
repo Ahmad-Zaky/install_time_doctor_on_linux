@@ -1,6 +1,6 @@
 # Install Time Doctor On Linux (Ubuntu)
 
-Here we will focus on how to install Time Doctor tool on Linux, and the issues you may face during the installation.
+Here we will focus on how to install Time Doctor tool on Linux, and the common issues you may face during the installation.
 
 ## Installation
 
