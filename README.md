@@ -72,7 +72,7 @@ To fix it you will disable wayland to switch back to org by following these comm
 
 3\. save the file and reboot the OS.
 
-## Issue #3 - Time Doctor Extension asks for desktop to be installed first and refuse to start working
+### Issue #3 - Time Doctor Extension asks for desktop to be installed first and refuse to start working
 
 - Some brawsers does not work with Time doctor extension like `brave`.
     
@@ -81,14 +81,14 @@ To fix it you will disable wayland to switch back to org by following these comm
 - Unfortunately right now, you will only be able to start the extension by installing the extension on chrome, or firefox.
     
 
-## Issue #4 - Submit exension host configuration does not work
+### Issue #4 - Submit exension host configuration does not work
 
 - Sometimes if everything works fine and you are trying to submit configuring the host, when you try to submit the form it simply does not work.
     
 - The fix we found, which worked with this issue is simply to upgrade the browser version like upgrade chrome and/or firefox.
     
 
-## Issue #5 - the desktop app does not open
+### Issue #5 - the desktop app does not open
 
 - Sometimes you the installation works fine, but the app does not open, and crashes with this output error.
     
@@ -105,7 +105,7 @@ To fix it you will disable wayland to switch back to org by following these comm
 - rerun time doctor, it should work just fine.
     
 
-## Issue #6 - Installing time doctor script fails
+### Issue #6 - Installing time doctor script fails
 
 - some how the installation fails due to not installed dependencies.
     
@@ -118,7 +118,7 @@ sudo apt install libxcb-xinput0
 
  ```
 
-## Issue #7 - Unable to locate libffi7 error while installing time doctor script
+### Issue #7 - Unable to locate libffi7 error while installing time doctor script
 
 - if you have new ubuntu releases above 22.04 (jammy), the installation may fail with this error `Unable to locate libffi7` .
     
